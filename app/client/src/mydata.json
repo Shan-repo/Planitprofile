@@ -1,0 +1,123 @@
+{
+    "barChart": [
+        {
+            "labels": [
+                "1-Jun",
+                "2-Jun",
+                "3-Jun",
+                "4-Jun",
+                "5-Jun",
+                "8-Jun",
+                "9-Jun",
+                "10-Jun",
+                "11-Jun",
+                "12-Jun",
+                "15-Jun",
+                "16-Jun",
+                "17-Jun",
+                "18-Jun",
+                "19-Jun",
+                "22-Jun",
+                "23-Jun",
+                "24-Jun",
+                " 25-Jun",
+                "26-Jun",
+                "29-Jun",
+                "30-Jun"
+            ]
+        },
+        {
+            "datasets": [
+                {
+                    "label": "BILLABLE",
+                    "fill": false, 
+                    "borderColor": "rgba(0, 255, 0,1)",
+                    "borderWidth": 2,
+                    "hoverBackgroundColor": "rgba(0, 255, 0,0.4)",
+                    "hoverBorderColor": "rgba(0, 255, 0,1)",
+                    "data": [
+                        66,
+                        65,
+                        65,
+                        65,
+                         64,	
+                        64,
+                        64,	
+                        65,
+                        65,
+                        65,
+                        64,
+                        62,
+                        61,
+                        60,
+                        58,
+                        62,
+                        64,
+                        65,
+                        65,
+                        65,
+                        60,
+                        60
+                    ]
+                },
+                {
+                    "label": "NON BILLABLE",
+                    "fill": false,  
+                    "borderColor": "rgba(255,99,132,1)",
+                    "borderWidth": 2,
+                    "hoverBackgroundColor": "rgba(255,99,132,0.4)",
+                    "hoverBorderColor": "rgba(255,99,132,1)",
+                    "data": [
+                        32,	
+                        34,	
+                        34,	
+                        34,	
+                        35,	
+                        0,	
+                        36,	
+                        35,	
+                        35,	
+                        35,	
+                        36,	
+                        38,	
+                        39,	
+                        40,	
+                        42,	
+                        36,	
+                        35,	
+                        34,	
+                        34,	
+                        34,	
+                        32,	
+                        32
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "options": {
+                "scales": {
+                    "yAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": true
+                            }
+                        }
+                    ]
+                },
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                    }
+                },
+                "legend": {
+                    "display": true
+                }
+            }
+        }
+    ]
+}

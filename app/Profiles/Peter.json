@@ -1,0 +1,141 @@
+{
+    "Name": "Peter Barlett",
+    "Position": "Automation Test Engineer",
+    "Description": "Passionate Test Automation Professional with 15 years of experience in GUI Test automation, aiding tools creation, framework design and web service automation adapting to Agile scrum and waterfall  methodologies on Insurance and Banking domain",
+    "Address": "Sydney, Australia",
+    "Company": "Planit Testing",
+    
+    "SocialMedias": [
+      "https://github.com/",
+      "https://in.linkedin.com/in/shanavas-shakeer-88ab24ab",
+      "https://www.facebook.com/"
+    ],
+    "Experiences": [
+      {
+        "companyName": "Infosys Technologies",
+        "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQGcC5nkmHu2cg/company-logo_200_200/0?e=2159024400&v=beta&t=MqukDvs07LQJT7cC5KzBOWbd6v2CSEUBP7HsE4-8h_E",
+        "roles": [
+          {
+            "title": "Test Engineer",
+            "description": "• Preparation of test scenario as per the functional and business requirements.\n• Preparation of test Scripts and test cases as per the functional and business requirements.\nResponsible for Data setup activity and executing test Scripts and test cases\n• Reporting defects found during testing and Retest the defects if the defect is fixed.\n• Co-ordination with development team on defect fixes (By helping with testing in Developmental\nEnvironment if there are more defects to be fixed). Involved in Automation, Sanity, ST, SIT and\nRegression, preparing daily interim and EOD report to client with excel macro\nTesting Tools: Quality Centre, Excel VBA, and QTP.",
+            "startDate": "2013-02-18",
+            "endDate": "2016-02-01",
+            "location": "Chennai, India"
+          }
+        ]
+      }
+    ],
+    "Education": [
+      {
+        "Edu": "Bachelor of Engineering - Aeronautical Engineering",
+        "university": "Anna University",
+        "startDate": "2008-02-18",
+        "endDate": "2012-02-01",
+        "Percentage": "87%"
+      },
+      {
+        "Edu": "Higher Secondary",
+        "university": "Cluny Convent",
+        "startDate": "2006-02-18",
+        "endDate": "2008-02-01",
+        "Percentage": "85%"
+      }
+  
+    ],
+    "Certificates": [
+      {
+        "CertificateName": "AWS Certified Cloud Practitioner",
+        "CertificationDate": "2020-06-12",
+        "Source": "https://www.certmetrics.com/amazon/electronic_score_report.aspx?exam=912592"
+      }
+      
+    ],
+    "LocalExperiences": [
+      {
+        "companyName": "Legal Aid",
+        "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQGcC5nkmHu2cg/company-logo_200_200/0?e=2159024400&v=beta&t=MqukDvs07LQJT7cC5KzBOWbd6v2CSEUBP7HsE4-8h_E",
+        "roles": [
+          {
+            "title": "Test Engineer",
+            "description": "Create and execute automation test scripts",
+            "startDate": "2013-02-18",
+            "endDate": "2016-02-01",
+            "location": "Chennai, India"
+          }
+        ],
+        "CustomerFeedback": "Shanavas joined us around the end of project as a replacement of resource for just 3 weeks (which extended to 5 weeks) period and we had the concern of his performance in this short period of time where he has to learn and understand the new application functionality and perform some quite complex integration transactions which he not only learnt even excelled at it and not only impressed even shocked us with his technical skills, speed and performance.Shanavas has proved to be a very dedicated, smart, thorough and avid learner along with an excellent communication, reporting and testing skills. He worked dedicatedly as a team player and never hesitated on picking up new task with minimal supervision. I felt like we haven’t utilised his complete skillset due to restrained environment and limited engagement.Resources like him are hard to find and I wish him every success in his future endeavours!! Will be more than happy to engage him back if any opportunity arises!"
+      },
+      {
+        "companyName": "Coex",
+        "logo": "http://logok.org/wp-content/uploads/2014/10/EY-logo-880x727.png",
+        "roles": [
+          {
+            "title": "Senior Test Engineer",
+            "description": "Automation developer",
+            "startDate": "2016-02-15",
+            "endDate": "2018-11-28",
+            "location": "Chennai, India"
+          }
+        ],
+        "CustomerFeedback": "Shanavas joined us around the end of project as a replacement of resource for just 3 weeks (which extended to 5 weeks) period and we had the concern of his performance in this short period of time where he has to learn and understand the new application functionality and perform some quite complex integration transactions which he not only learnt even excelled at it and not only impressed even shocked us with his technical skills, speed and performance.Shanavas has proved to be a very dedicated, smart, thorough and avid learner along with an excellent communication, reporting and testing skills. He worked dedicatedly as a team player and never hesitated on picking up new task with minimal supervision. I felt like we haven’t utilised his complete skillset due to restrained environment and limited engagement.Resources like him are hard to find and I wish him every success in his future endeavours!! Will be more than happy to engage him back if any opportunity arises!"
+      },
+      {
+        "companyName": "Suez",
+        "logo": "http://logok.org/wp-content/uploads/2014/10/EY-logo-880x727.png",
+        "roles": [
+          {
+            "title": "Senior Test Engineer",
+            "description": "Automation developer",
+            "startDate": "2016-02-15",
+            "endDate": "2018-11-28",
+            "location": "Chennai, India"
+          }
+        ],
+        "CustomerFeedback": "Shanavas joined us around the end of project as a replacement of resource for just 3 weeks (which extended to 5 weeks) period and we had the concern of his performance in this short period of time where he has to learn and understand the new application functionality and perform some quite complex integration transactions which he not only learnt even excelled at it and not only impressed even shocked us with his technical skills, speed and performance.Shanavas has proved to be a very dedicated, smart, thorough and avid learner along with an excellent communication, reporting and testing skills. He worked dedicatedly as a team player and never hesitated on picking up new task with minimal supervision. I felt like we haven’t utilised his complete skillset due to restrained environment and limited engagement.Resources like him are hard to find and I wish him every success in his future endeavours!! Will be more than happy to engage him back if any opportunity arises!"
+      }
+    ],
+    "Skills": [
+      {
+        "Area": "Programming Language",
+        "SkillSet": [
+          {
+            "Name": "Java",
+            "Hot": true
+          },
+          {
+            "Name": "C#",
+            "Hot": false
+          },
+          {
+            "Name": "Python",
+            "Hot": false
+          }
+        ]
+      },
+      {
+        "Area": "Web-Based Application Development",
+        "SkillSet": [
+          {
+            "Name": "JavaScript (ES5, ES6)",
+            "Hot": true
+          },
+          {
+            "Name": "TypeScript",
+            "Hot": false
+          },
+          {
+            "Name": "HTML5",
+            "Hot": true
+          },
+          {
+            "Name": "CSS",
+            "Hot": true
+          },
+          {
+            "Name": "React",
+            "Hot": true
+          }
+        ]
+      }      
+    ]   
+  }
