@@ -9,17 +9,19 @@ type Headings = {
   education: string,
   skills: string,
   projects: string,
-  awards: string
+  certifications: string
 }
 
 type Basics = {
   name?: ?string,
   email?: ?string,
   phone?: ?string,
-  website?: ?string,
+  summary?: ?string,
   location?: {
     address?: ?string
-  }
+  },
+  yearsofexp?: ?string,
+  employeeId?: ?string
 }
 
 type School = {
@@ -39,7 +41,8 @@ type Job = {
   website?: ?string,
   startDate?: ?string,
   endDate?: ?string,
-  highlights: Array<?string>
+  highlights: Array<?string>,
+  isplanitEngagement?: ?string
 }
 
 type Skill = {
@@ -54,7 +57,7 @@ type Project = {
   keywords: Array<?string>
 }
 
-type Award = {
+type Certification = {
   title?: ?string,
   date?: ?string,
   awarder?: ?string,
@@ -69,7 +72,7 @@ type FormValues = {
   education: Array<School>,
   skills: Array<Skill>,
   projects: Array<Project>,
-  awards: Array<Award>
+  certifications: Array<Certification>
 }
 
 type FormValuesWithSectionOrder = FormValues & {

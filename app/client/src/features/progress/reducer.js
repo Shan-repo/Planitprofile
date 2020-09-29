@@ -16,8 +16,9 @@ const initialState = {
     'education',
     'work',
     'skills',
-    'projects',
-    'awards'
+    // 'projects',
+    // 'awards'
+     'certifications'
   ]
 }
 

@@ -9,12 +9,13 @@ import Education from './sections/Education'
 import Work from './sections/Work'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
-import Awards from './sections/Awards'
+import Certifications from './sections/Certifications'
 import School from './fragments/School'
 import Job from './fragments/Job'
 import Skill from './fragments/Skill'
 import Project from './fragments/Project'
-import Award from './fragments/Award'
+import Certification from './fragments/Certification'
+
 
 export {
   Templates,
@@ -23,12 +24,12 @@ export {
   Work,
   Skills,
   Projects,
-  Awards,
+  Certifications,
   School,
   Job,
   Skill,
   Project,
-  Award
+  Certification
 }
 
 export default Form

@@ -41,7 +41,7 @@ describe('actions', () => {
         education: '',
         skills: '',
         projects: '',
-        awards: ''
+        certifications: ''
       },
       basics: {
         name: 'Fake User',
@@ -89,7 +89,7 @@ describe('actions', () => {
           keywords: ['']
         }
       ],
-      awards: [
+      certifications: [
         {
           title: '',
           date: '',

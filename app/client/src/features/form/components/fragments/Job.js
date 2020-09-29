@@ -55,6 +55,11 @@ function Job({ highlights, index, addHighlight, removeHighlight }: Props) {
         placeholder="Mountain View, CA"
       />
       <LabeledInput
+        name={`work[${index}].isplanitEngagement`}
+        label="Planit Engagement"
+        placeholder="yes/no"
+      />
+      <LabeledInput
         name={`work[${index}].startDate`}
         label="Start Date"
         placeholder="May 2015"

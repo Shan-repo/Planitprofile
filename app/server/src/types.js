@@ -3,20 +3,21 @@
  */
 
 type Section =
-  | 'templates'
+  // | 'templates'
   | 'profile'
   | 'education'
   | 'work'
   | 'skills'
-  | 'projects'
-  | 'awards'
+  // | 'projects'
+  // | 'awards'
+  | 'certifications'
 
 type Headings = {
   work?: string,
   education?: string,
   skills?: string,
   projects?: string,
-  awards?: string
+  certifications?: string
 }
 
 type Basics = {
@@ -87,7 +88,7 @@ type Generator = {
   workSection: (work?: Array<Job>, heading?: string) => string,
   skillsSection: (skills?: Array<Skill>, heading?: string) => string,
   projectsSection: (projects?: Array<Project>, heading?: string) => string,
-  awardsSection: (awards?: Array<Award>, heading?: string) => string
+  awardsSection: (certifications?: Array<Certification>, heading?: string) => string
 }
 
 type LaTeXOpts = {

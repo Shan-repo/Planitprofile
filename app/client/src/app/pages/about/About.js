@@ -1,7 +1,7 @@
 import React,{ Component }  from 'react';
 //import Profile from "../../../profile.json";
 import Typography from '@material-ui/core/Typography';
-import ImgProfile from '../../../Image/shan.jpg';
+import ImgProfile from '../../../../../Images/PlanitLogo.png';
 import ExampleComponent from 'react-rounded-image';
 
 
@@ -14,24 +14,18 @@ render() {
       <div  className="card">
         <div className="card-content" >
           <h3 className="mt-bottom">
-          {Profile.Name}
+          {Profile.basics.name}
           <div style={{float: 'right'}}>
-                <ExampleComponent
-                  image={ImgProfile}
-                  roundedColor="#321124"
-                  imageWidth="150"
-                  imageHeight="150"
-                  roundedSize="10"
-                />
+          <img src={ImgProfile} width="100" alt="logo" />
           </div>
           </h3>
 
           <h4 className="mt-bottom">
-          {Profile.Position}
+          {Profile.basics.position}
           </h4>
           <span >
           <Typography variant="h6" >
-             {Profile.Description}
+             {Profile.basics.summary}
           </Typography>
           </span>
         </div>
@@ -40,7 +34,7 @@ render() {
       <div  className="card">
         <div className="card-content" >
         
-        Planit Contact: {Profile.Name} // {Profile.Email} // {Profile.Mobile} 
+        Planit Contact: {Profile.basics.name} // {Profile.basics.email} // {Profile.basics.phone} 
  
         </div>
         </div>

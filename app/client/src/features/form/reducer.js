@@ -15,17 +15,19 @@ const initialState = {
       education: '',
       skills: '',
       projects: '',
-      awards: ''
+      certifications: ''
     },
     basics: {
       name: '',
       email: '',
       phone: '',
-      website: '',
+      summary: '',
+      position: '',
       location: {
         address: ''
       },
-      summaries: ['']
+      yearsofexp: '',
+      employeeId: ''
     },
     education: [
       {
@@ -64,7 +66,7 @@ const initialState = {
         keywords: ['']
       }
     ],
-    awards: [
+    certifications: [
       {
         title: '',
         date: '',
@@ -387,13 +389,13 @@ function form(state: FormState = initialState, action: Action): FormState {
         ...state,
         values: {
           ...state.values,
-          awards: [...state.values.awards, {}]
+          certifications: [...state.values.certifications, {}]
         }
       }
     }
 
     case 'REMOVE_AWARD': {
-      if (state.values.awards.length <= 1) {
+      if (state.values.certifications.length <= 1) {
         return state
       }
 
@@ -401,7 +403,7 @@ function form(state: FormState = initialState, action: Action): FormState {
         ...state,
         values: {
           ...state.values,
-          awards: state.values.awards.slice(0, -1)
+          certifications: state.values.certifications.slice(0, -1)
         }
       }
     }

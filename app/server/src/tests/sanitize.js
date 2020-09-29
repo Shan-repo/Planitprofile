@@ -161,7 +161,7 @@ describe('sanitizer', () => {
         'education',
         'work',
         'skills',
-        'projects',
+        // 'projects',
         'awards'
       ]
     }
@@ -233,7 +233,7 @@ describe('sanitizer', () => {
         'education',
         'work',
         'skills',
-        'projects',
+        // 'projects',
         'awards'
       ]
     }

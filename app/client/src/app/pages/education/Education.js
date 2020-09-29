@@ -14,30 +14,28 @@ class Education extends Component {
             EDUCATION
           </h4>
           {
-            profile.Education.map((education) => {
+            profile.education.map((education) => {
 
               const stDate = moment(education.startDate);
               const tEnd = moment(education.endDate);
               return (
-                <React.Fragment key={education.Edu}>
+                <React.Fragment key={education.institution}>
                 <div className="row mt-top">
                   <div className="col xl4 l4 m6 s12">
 
                     <h6 className="no-pad mt-bottom">
-                      <strong className='company-font'>{education.Edu}</strong>
+                      <strong className='company-font'>{education.institution}</strong>
                       <span >
                         <Typography style={{ float: 'right' }} variant="h6" >
-                          {education.Percentage}
+                          {education.gpa}
                         </Typography>
                       </span>
                       <br></br>
-                      <strong>{education.university}</strong>
+                      <strong>{education.area}</strong>
                       <br></br>
                       <span className="jobDuration">{stDate.format('YYYY')} - {tEnd.format('YYYY')} </span>
 
                     </h6>
-
-
                   </div>
                 </div>
                 </React.Fragment>

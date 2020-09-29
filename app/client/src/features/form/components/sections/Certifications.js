@@ -7,37 +7,37 @@ import { connect } from 'react-redux'
 import Section from './Section'
 import { Button, Divider } from '../../../../common/components'
 import LabeledInput from '../fragments/LabeledInput'
-import { Award } from '..'
+import { Certification } from '..'
 import { addAward, removeAward } from '../../actions'
 import type { FormValues } from '../../types'
 import type { State } from '../../../../app/types'
 
 type Props = {
-  awards: $PropertyType<FormValues, 'awards'>,
+  certifications: $PropertyType<FormValues, 'certifications'>,
   addAward: () => void,
   removeAward: () => void
 }
 
-function Awards({ awards, addAward, removeAward }: Props) {
+function Certifications({ certifications, addAward, removeAward }: Props) {
   return (
-    <Section heading="Honors & Awards">
+    <Section heading="Certifications / Awards">
       <LabeledInput
-        name="headings.awards"
+        name="headings.certifications"
         label="Section Heading"
-        placeholder="Awards"
+        placeholder="Certifications"
       />
       <Divider />
-      {awards.map((award, i) => <Award key={i} index={i} />)}
+      {certifications.map((certification, i) => <Certification key={i} index={i} />)}
       <div className="section-buttons">
         <Button onClick={addAward} type="button">
-          Add Award
+          Add 
         </Button>
         <Button
           onClick={removeAward}
-          disabled={awards.length === 1}
+          disabled={certifications.length === 1}
           type="button"
         >
-          Remove Award
+          Remove 
         </Button>
       </div>
     </Section>
@@ -46,7 +46,7 @@ function Awards({ awards, addAward, removeAward }: Props) {
 
 function mapState(state: State) {
   return {
-    awards: state.form.resume.values.awards
+    certifications: state.form.resume.values.certifications
   }
 }
 
@@ -55,4 +55,4 @@ const mapActions = {
   removeAward
 }
 
-export default connect(mapState, mapActions)(Awards)
+export default connect(mapState, mapActions)(Certifications)

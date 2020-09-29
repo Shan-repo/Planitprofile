@@ -64,6 +64,16 @@ function Profile({
         label="Phone Number"
         placeholder="+61 123 456 789"
       />
+        <LabeledInput
+        name="basics.position"
+        label="Designation"
+        placeholder="Designation"
+      />
+       <LabeledInput
+        name="basics.summary"
+        label="Career Summary"
+        placeholder="Summary"
+      />
       <LabeledInput
         name="basics.location.address"
         label="Location"

@@ -1,189 +1,195 @@
 {
-    "Name": "Shanavas Shakeer",
-    "Position": "Automation Test Engineer",
-    "Description": "Passionate Test Automation Professional with 7 years of experience in GUI Test automation, aiding tools creation, framework design and web service automation adapting to Agile scrum and waterfall  methodologies on Insurance and Banking domain",
-    "Address": "Sydney, Australia",
-    "Company": "Planit Testing",
-    "Email": "sshakeer@planittesting.com",
-    "Mobile": "+61 481 009 929",
-    
-    "SocialMedias": [
-      "https://github.com/",
-      "https://in.linkedin.com/in/shanavas-shakeer-88ab24ab",
-      "https://www.facebook.com/"
-    ],
-    "Experiences": [
-      {
-        "companyName": "Infosys Technologies",
-        "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQGcC5nkmHu2cg/company-logo_200_200/0?e=2159024400&v=beta&t=MqukDvs07LQJT7cC5KzBOWbd6v2CSEUBP7HsE4-8h_E",
-        "roles": [
-          {
-            "title": "Test Engineer",
-            "description": "• Preparation of test scenario as per the functional and business requirements.\n• Preparation of test Scripts and test cases as per the functional and business requirements.\nResponsible for Data setup activity and executing test Scripts and test cases\n• Reporting defects found during testing and Retest the defects if the defect is fixed.\n• Co-ordination with development team on defect fixes (By helping with testing in Developmental\nEnvironment if there are more defects to be fixed). Involved in Automation, Sanity, ST, SIT and\nRegression, preparing daily interim and EOD report to client with excel macro\nTesting Tools: Quality Centre, Excel VBA, and QTP.",
-            "startDate": "2013-02-18",
-            "endDate": "2016-02-01",
-            "location": "Chennai, India"
-          }
-        ]
-      },
-      {
-        "companyName": "EY",
-        "logo": "http://logok.org/wp-content/uploads/2014/10/EY-logo-880x727.png",
-        "roles": [
-          {
-            "title": "Senior Test Engineer",
-            "description": "• Responsible for executing test Scripts and test cases.\n• Retesting and closing the defects if the defect is fixed.\n• Involved in Automation, Sanity, UAT and Regression,\n• Preparing daily interim and EOD report to client with excel macro.\nTesting Tools: HP ALM, UFT, VB script, Test Complete 12.30, Selenium with Test NG framework, BDD\nCucumber, API testing using soap UI/ Rest Assured.",
-            "startDate": "2016-02-15",
-            "endDate": "2018-11-28",
-            "location": "Chennai, India"
-          }
-        ]
-      },
-      {
-        "companyName": "Emirates",
-        "logo": "https://logos-download.com/wp-content/uploads/2016/03/Emirates_emblem_logotype_logo_3.png",
-        "roles": [
-          {
-            "title": "Senior Test Engineer",
-            "description": "• Responsible for designing complex automation test suites/scenarios and frameworks.\n• Automated manual testcases using selenium with TESTNG and serenity framework and create Test Reports using\nexternal libraries like extent and allure reporting.\n• Setup continuous deployment and Integration of applications using Jenkins and Subversion control.\nTesting Tools: Serenity and webdriverIO framework, BDD Cucumber, API testing using Rest Assured framework.",
-            "startDate": "2018-12-04",
-            "endDate": "2019-09-10",
-            "location": "Dubai, UAE"
-          }
-        ]
-      }
-    ],
-    "Education": [
-      {
-        "Edu": "Bachelor of Engineering - Aeronautical Engineering",
-        "university": "Anna University",
-        "startDate": "2008-02-18",
-        "endDate": "2012-02-01",
-        "Percentage": "87%"
-      },
-      {
-        "Edu": "Higher Secondary",
-        "university": "Cluny Convent",
-        "startDate": "2006-02-18",
-        "endDate": "2008-02-01",
-        "Percentage": "85%"
-      }
-  
-    ],
-    "Certificates": [
-      {
-        "CertificateName": "AWS Certified Cloud Practitioner",
-        "CertificationDate": "2020-06-12",
-        "Source": "https://www.certmetrics.com/amazon/electronic_score_report.aspx?exam=912592"
-      },
-      {
-        "CertificateName": "Certified Agile Essentials",
-        "CertificationDate": "2019-11-22",
-        "Source": "https://zertdb.isqi.org/en/download/certificate/token/kP4YMu81i5NMN5n6"
-      },
-      {
-        "CertificateName": "Automation Anywhere Certified Advanced RPA Professional (V11.0)",
-        "CertificationDate": "2019-11-06",
-        "Source": "https://certificates.automationanywhere.com/575dae2d-de7a-4476-a809-03a01a758af6#gs.9dmexl"
-      },
-      {
-        "CertificateName": "ISTQB",
-        "CertificationDate": "2014-06-30",
-        "Source": "https://www.certmetrics.com/amazon/electronic_score_report.aspx?exam=912592"
-      },
-      {
-        "CertificateName": "ACCELQ Certified Automation Engineer",
-        "CertificationDate": "2020-04-20",
-        "Source": "https://www.onlineexambuilder.com/index.php?r=exam/certificate&hash=d30cedd08450d1eb944e0de1964ed88a&sessionId=31164149&id=313286&language=en"
-      }
-      
-    ],
-    "LocalExperiences": [
-      {
-        "companyName": "Legal Aid",
-        "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQGcC5nkmHu2cg/company-logo_200_200/0?e=2159024400&v=beta&t=MqukDvs07LQJT7cC5KzBOWbd6v2CSEUBP7HsE4-8h_E",
-        "roles": [
-          {
-            "title": "Test Engineer",
-            "description": "Create and execute automation test scripts",
-            "startDate": "2013-02-18",
-            "endDate": "2016-02-01",
-            "location": "Chennai, India"
-          }
-        ],
-        "CustomerFeedback": "Shanavas joined us around the end of project as a replacement of resource for just 3 weeks (which extended to 5 weeks) period and we had the concern of his performance in this short period of time where he has to learn and understand the new application functionality and perform some quite complex integration transactions which he not only learnt even excelled at it and not only impressed even shocked us with his technical skills, speed and performance.Shanavas has proved to be a very dedicated, smart, thorough and avid learner along with an excellent communication, reporting and testing skills. He worked dedicatedly as a team player and never hesitated on picking up new task with minimal supervision. I felt like we haven’t utilised his complete skillset due to restrained environment and limited engagement.Resources like him are hard to find and I wish him every success in his future endeavours!! Will be more than happy to engage him back if any opportunity arises!"
-      },
-      {
-        "companyName": "Coex",
-        "logo": "http://logok.org/wp-content/uploads/2014/10/EY-logo-880x727.png",
-        "roles": [
-          {
-            "title": "Senior Test Engineer",
-            "description": "Automation developer",
-            "startDate": "2016-02-15",
-            "endDate": "2018-11-28",
-            "location": "Chennai, India"
-          }
-        ],
-        "CustomerFeedback": "Shanavas joined us around the end of project as a replacement of resource for just 3 weeks (which extended to 5 weeks) period and we had the concern of his performance in this short period of time where he has to learn and understand the new application functionality and perform some quite complex integration transactions which he not only learnt even excelled at it and not only impressed even shocked us with his technical skills, speed and performance.Shanavas has proved to be a very dedicated, smart, thorough and avid learner along with an excellent communication, reporting and testing skills. He worked dedicatedly as a team player and never hesitated on picking up new task with minimal supervision. I felt like we haven’t utilised his complete skillset due to restrained environment and limited engagement.Resources like him are hard to find and I wish him every success in his future endeavours!! Will be more than happy to engage him back if any opportunity arises!"
-      },
-      {
-        "companyName": "Suez",
-        "logo": "http://logok.org/wp-content/uploads/2014/10/EY-logo-880x727.png",
-        "roles": [
-          {
-            "title": "Senior Test Engineer",
-            "description": "Automation developer",
-            "startDate": "2016-02-15",
-            "endDate": "2018-11-28",
-            "location": "Chennai, India"
-          }
-        ],
-        "CustomerFeedback": "Shanavas joined us around the end of project as a replacement of resource for just 3 weeks (which extended to 5 weeks) period and we had the concern of his performance in this short period of time where he has to learn and understand the new application functionality and perform some quite complex integration transactions which he not only learnt even excelled at it and not only impressed even shocked us with his technical skills, speed and performance.Shanavas has proved to be a very dedicated, smart, thorough and avid learner along with an excellent communication, reporting and testing skills. He worked dedicatedly as a team player and never hesitated on picking up new task with minimal supervision. I felt like we haven’t utilised his complete skillset due to restrained environment and limited engagement.Resources like him are hard to find and I wish him every success in his future endeavours!! Will be more than happy to engage him back if any opportunity arises!"
-      }
-    ],
-    "Skills": [
-      {
-        "Area": "Programming Language",
-        "SkillSet": [
-          {
-            "Name": "Java",
-            "Hot": true
-          },
-          {
-            "Name": "C#",
-            "Hot": false
-          },
-          {
-            "Name": "Python",
-            "Hot": false
-          }
-        ]
-      },
-      {
-        "Area": "Web-Based Application Development",
-        "SkillSet": [
-          {
-            "Name": "JavaScript (ES5, ES6)",
-            "Hot": true
-          },
-          {
-            "Name": "TypeScript",
-            "Hot": false
-          },
-          {
-            "Name": "HTML5",
-            "Hot": true
-          },
-          {
-            "Name": "CSS",
-            "Hot": true
-          },
-          {
-            "Name": "React",
-            "Hot": true
-          }
-        ]
-      }      
-    ]   
-  }
+  "selectedTemplate": 1,
+  "headings": {
+    "work": "Work Experience",
+    "education": "Education",
+    "skills": "",
+    "projects": "",
+    "certifications": "QUALIFICATIONS"
+  },
+  "basics": {
+    "name": "Shanavas Shakeer",
+    "email": "sshakeer@planittesting.com",
+    "phone": "+61 481 009 929",
+    "summary": "Shanavas is an automation engineer with 7 years of experience into automation testing and he has exposure to various testing tools like HP UFT, Test Complete and Selenium. He also has experience in API testing using rest assured framework. In addition to the above tools, he has worked on open source frameworks like serenity, webdriverIO and BDD Cucumber for Angular and ReactJS based applications. He has automated desktop-based applications using HP UFT and Test Complete tools. He has been involved in setting up continuous integration and testing of applications using Jenkins, OpenShift and was responsible for updating the source code repository using version controlling tools like GIT/SVN. He has knowledge in Excel Macros, HTA Applications and has developed innovative tools which reduced the manual testing efforts.",
+    "location": {
+      "address": "Sydney, Australia"
+    },
+    "yearsofexp": "7.5",
+    "employeeId": "107659",
+    "position": "Test Automation Engineer"
+  },
+  "education": [
+    {
+      "institution": "Sri Ramakrishna Engineering College",
+      "location": "Anna University",
+      "area": "Aeronautical Engineering",
+      "studyType": "BE",
+      "endDate": "Apr 2012",
+      "gpa": "8.7",
+      "startDate": "Jul 2008"
+    }
+  ],
+  "work": [
+    {
+      "position": "Automation Engineer",
+      "website": "",
+      "highlights": [
+        "•\tReporting defects found during testing and Retest the defects if the defect is fixed.",
+        "•\tCo-ordination with development team on defect fixes (By helping with testing in Developmental Environment if there are more defects to be fixed).",
+        "•\tInvolved in Automation, UAT and Regression,",
+        "•\tSend daily status report to the client."
+      ],
+      "company": "Legal Aid",
+      "location": "104, John St, Sydney",
+      "startDate": "Dec 2019",
+      "endDate": "Aug 2020",
+      "projectdescription": "Legal Aid NSW, replaced an existing legacy solution (CASES) with Pega system solution to deliver a new client legal case management solution for legal Aid, available across the web and Integrated into the existing systems. The solution is primarily aimed at internal staff, allowing them capture client and case management information, attach relevant documentations",
+      "isplanitEngagement": "yes"
+    },
+    {
+      "highlights": [
+        "•\tResponsible for automating the processes like scraping the data from sales force applications and feed the same into mainframe application called Oasis.",
+        "•\tResponsible for entire process automation.",
+        "•\tInvolved in Automation POC."
+      ],
+      "company": "SUEZ",
+      "position": "Automation Engineer",
+      "location": "Rhodes, Sydney",
+      "startDate": "FEB 2020",
+      "endDate": "Feb 2020",
+      "projectdescription": "SUEZ operates largely in the water treatment and waste management sector. Salesforce application is used for service agreement generation and Mainframe application is used for customer creation.",
+      "isplanitEngagement": "yes"
+    },
+    {
+      "highlights": [
+        "•\tResponsible for designing complex automation test suites/scenarios and frameworks. ",
+        "•\tAutomated manual testcases using selenium with TESTNG and serenity framework and create Test Reports using external libraries like extent and allure reporting.",
+        "•\tSetup continuous deployment and Integration of applications using Jenkins and Subversion control."
+      ],
+      "company": "Emirates",
+      "position": "Senior Software Engineer",
+      "location": "Dubai, UAE",
+      "startDate": "Dec 2018",
+      "endDate": "OCT 2019",
+      "projectdescription": "Emirates airlines has various internal applications to handle network operations related activities which includes crew leave management, Crew allowance and Emergency management systems, the primary focus is to automate all internal applications where it involves of manual efforts for regression testing. Applications are developed on different domain and technologies"
+    },
+    {
+      "highlights": [
+        "•\tResponsible for executing test Scripts and test cases",
+        "•\tRetesting and closing the defects if the defect is fixed",
+        "•\tInvolved in Automation, Sanity, UAT and Regression",
+        "•\tPreparing daily interim and EOD report to client with excel macro. "
+      ],
+      "company": "EY LLP",
+      "position": "Senior Test Engineer",
+      "location": "Chennai India",
+      "startDate": "Feb 2016",
+      "endDate": "Nov 2018",
+      "projectdescription": ": Morgan Stanley wealth management has various applications, the primary focus of wealth management it focuses on client wealth and property which is controlled by financial analysts. As part of automation testing, we have automated.net, java and angularJS based applications using various automation tools. Reports will be published on dashboard using web services and it will be updated in HP ALM."
+    },
+    {
+      "highlights": [
+        "•\tPreparation of test scenario as per the functional and business requirements. ",
+        "•\tPreparation of test Scripts and test cases as per the functional and business requirements. Responsible for Data setup activity and executing test Scripts and test cases. Following up with Development team and Environmental set up team in case of any Environment set up failure.",
+        "•\tReporting defects found during testing and Retest the defects if the defect is fixed.",
+        "•\tCo-ordination with development team on defect fixes (By helping with testing in Developmental Environment if there are more defects to be fixed).",
+        "•\tInvolved in Automation, Sanity, ST, SIT and Regression,",
+        "•\tPreparing daily interim and EOD report to client with excel macro"
+      ],
+      "company": "Infosys Limited",
+      "position": "Test Engineer",
+      "location": "Chennai, India",
+      "startDate": "Feb 2013",
+      "endDate": "Feb 2016",
+      "projectdescription": "RCX- Regional Communication Exchange is the gateway system to process the transactions of commercial disbursements, RCX receives all the transactions from source systems like CD, CFX/GFH, CBII,IMPS,DELPHI –XP .This is a middleware application which gets the transactions from the sources ,process the same and send back to the destination sources like CITIFT or Flex . There are also middleware sources which comes up for specific transactions like PIRS, GI systems."
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Java",
+        "VBScript",
+        "SQL",
+        "VBA"
+      ],
+      "name": "Programming Language "
+    },
+    {
+      "keywords": [
+        "HP ALM/QC",
+        "Test Rail",
+        "JIRA",
+        "HP UFT",
+        "Test Complete",
+        "Selenium"
+      ],
+      "name": "Testing tools"
+    },
+    {
+      "keywords": [
+        "Oracle",
+        "Payments"
+      ],
+      "name": "SYSTEMS KNOWLEDGE"
+    },
+    {
+      "keywords": [
+        "Waterfall",
+        "Agile"
+      ],
+      "name": "Project Methodologies"
+    },
+    {
+      "keywords": [
+        "Cypress",
+        "WebdriverIO"
+      ],
+      "name": "JavaScript framework"
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "description": "",
+      "url": "",
+      "keywords": [
+        ""
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "awarder": "ISTQB",
+      "summary": "https://www.certmetrics.com/amazon/electronic_score_report.aspx?exam=912592",
+      "date": "2014-06-30",
+      "title": "ISTQB Foundation Level (ITB-CTFL-0065135)"
+    },
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "date": "2020-06-12",
+      "summary": "https://www.certmetrics.com/amazon/electronic_score_report.aspx?exam=912592",
+      "awarder": "AWS"
+    },
+    {
+      "title": "Automation Anywhere Certified Advanced RPA Professional (V11.0)",
+      "date": "2019-11-06",
+      "summary": "https://certificates.automationanywhere.com/575dae2d-de7a-4476-a809-03a01a758af6#gs.9dmexl",
+      "awarder": "Automation Anywhere"
+    },
+    {
+      "title": "Certified Agile Essentials",
+      "date": "2019-11-22",
+      "awarder": "CAE",
+      "summary": "https://zertdb.isqi.org/en/download/certificate/token/kP4YMu81i5NMN5n6"
+    }
+  ],
+  "sections": [
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "certifications"
+  ]
+}

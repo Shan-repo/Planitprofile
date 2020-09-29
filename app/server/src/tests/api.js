@@ -20,7 +20,7 @@ test('POST /api/generate/resume should generate a PDF', async () => {
       'education',
       'work',
       'skills',
-      'projects',
+      // 'projects',
       'awards'
     ]
   }
@@ -52,7 +52,7 @@ test('POST /api/generate/source should generate a zip of the LaTeX source code',
       'education',
       'work',
       'skills',
-      'projects',
+      // 'projects',
       'awards'
     ]
   }

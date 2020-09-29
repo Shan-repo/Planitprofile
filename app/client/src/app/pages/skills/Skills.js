@@ -22,22 +22,22 @@ class Skills extends Component {
             CORE SKILLS
           </h4>
           {
-            profile.Skills.map((skill) => {
+            profile.skills.map((skill) => {
               return (
-                <Accordion key={skill.Area} defaultExpanded>
+                <Accordion key={skill.name} defaultExpanded>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography variant="h5">{skill.Area}</Typography>
+                    <Typography variant="h5">{skill.name}</Typography>
                 </AccordionSummary>
                 <AccordionDetails className={styles.skillPanelDetail}>
                     {
-                        skill.SkillSet.map((skillDetail) => {
+                        skill.keywords.map((skillDetail) => {
                             return (
                                 <Chip
                                     icon={skillDetail.Hot ? <StarIcon /> : null}
-                                    label={skillDetail.Name}
+                                    label={skillDetail}
                                     className={styles.skillChip}
                                     color="primary"
-                                    key={skillDetail.Name}
+                                    key={skillDetail}
                                 />
                             );
                         })

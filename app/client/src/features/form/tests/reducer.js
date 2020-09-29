@@ -525,7 +525,7 @@ describe('form reducer', () => {
       ...initialState,
       values: {
         ...initialState.values,
-        awards: []
+        certifications: []
       }
     }
 
@@ -535,7 +535,7 @@ describe('form reducer', () => {
       ...initialState,
       values: {
         ...state.values,
-        awards: [{}]
+        certifications: [{}]
       }
     }
 
@@ -548,7 +548,7 @@ describe('form reducer', () => {
       ...initialState,
       values: {
         ...initialState.values,
-        awards: [
+        certifications: [
           { title: 'Coolest dude ever' },
           { title: 'Best resume generator' }
         ]
@@ -561,7 +561,7 @@ describe('form reducer', () => {
       ...initialState,
       values: {
         ...state.values,
-        awards: [{ title: 'Coolest dude ever' }]
+        certifications: [{ title: 'Coolest dude ever' }]
       }
     }
 

@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
-//import profile from '../../../profile.json';
+import pic from '../../../../../Images/PlanitProject.png';
 import moment from "moment";
 import Typography from '@material-ui/core/Typography';
+
+function renderImage(value) {
+console.log("Paased value"+value)
+  if ("yes"===value) {
+      return (
+          <img style={{ float: 'right' }} src={pic} />
+      );
+  }
+}
 
 class Experience extends Component {
   render() { 
@@ -13,30 +22,39 @@ class Experience extends Component {
             EXPERIENCE
           </h4>
           {
-            profile.Experiences.map((experience) => {
+            profile.work.map((experience) => {
+              const startDate = moment(experience.startDate);
+              const timeEnd = moment(experience.currentJob ? new Date() : new Date(experience.endDate));
               return (
-                <React.Fragment key={experience.companyName}>
+                <React.Fragment key={experience.company}>
                 <div className="row mt-top">
                   <div className="col xl4 l4 m6 s12">
-                    <img style={{ float: 'right' }} width="10%" src={experience.logo} alt='Shanavas' />
-                    {experience.roles.map(function (role, i) {
-                      const startDate = moment(role.startDate);
-                      const timeEnd = moment(role.currentJob ? new Date() : new Date(role.endDate));
-                      return <React.Fragment key={i}>
-                        <h6 className="no-pad mt-bottom">
-                          <strong className='company-font'>{experience.companyName}</strong>
+                
+                   
+                    <h6 className="no-pad mt-bottom">
+                          <strong className='company-font'>{experience.company}</strong>
+                          {renderImage(experience.isplanitEngagement)}
                           <br></br>
-                          <strong>{role.title}</strong>
+                          <strong>{experience.position}</strong>
+                          <br></br>
                           <span>
-                            <span className="jobDuration">{startDate.format('MMM YYYY')} - {role.currentJob ? 'Present' : timeEnd.format('MMM YYYY')}</span>
+                            <span className="jobDuration">{startDate.format('MMM YYYY')} - {experience.currentJob ? 'Present' : timeEnd.format('MMM YYYY')}</span>
                           </span>
                         </h6>
                         <span >
                           <Typography variant="h6" >
-                          {role.description}
+                          {experience.projectdescription}
                           </Typography>
                         </span>
-                        {/* <p style={{ alignContent: "center" }}><strong>{role.description}</strong></p> */}
+                        <br></br>
+                          <strong>Roles & Responsibilities</strong>
+                        <br></br>
+
+                    {experience.highlights.map(function (role, i) {
+                     
+                      return <React.Fragment key={i}>
+                       
+                        <p><strong>{role}</strong></p>
                       </React.Fragment>
                     })}
                   </div>

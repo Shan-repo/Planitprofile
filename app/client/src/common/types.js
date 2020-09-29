@@ -8,7 +8,9 @@ type Section =
   | 'education'
   | 'work'
   | 'skills'
-  | 'projects'
-  | 'awards'
+  | 'certifications'
+  // | 'projects'
+  // | 'awards'
+  
 
 export type { Section }

@@ -23,15 +23,15 @@ class Certification extends Component {
 						</thead>
 						<tbody>
 						{
-							profile.Certificates.map((Certificate) => {
-								const cDate = moment(Certificate.CertificationDate);
+							profile.certifications.map((Certificate) => {
+								const cDate = moment(Certificate.date);
 								return (
-									<React.Fragment key={Certificate.CertificateName}>
+									<React.Fragment key={Certificate.title}>
 									<tr>
-									<td>{Certificate.CertificateName}</td>
-									<td>{cDate.format('MMM YYYY')}</td>
+									<td>{Certificate.title}</td>
+									<td>{Certificate.date}</td>
 									<td>
-										<a rel="noopener noreferrer" target="_blank" href={Certificate.Source} className='btn blue lighten-2'>
+										<a rel="noopener noreferrer" target="_blank" href={Certificate.summary} className='btn blue lighten-2'>
 											View
 										</a>
 									</td>

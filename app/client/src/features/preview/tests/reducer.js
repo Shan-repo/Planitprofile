@@ -26,7 +26,7 @@ describe('preview reducer', () => {
             education: '',
             skills: '',
             projects: '',
-            awards: ''
+            certifications: ''
           },
           basics: {
             name: '',
@@ -74,7 +74,7 @@ describe('preview reducer', () => {
               keywords: ['']
             }
           ],
-          awards: [
+          certifications: [
             {
               title: '',
               date: '',

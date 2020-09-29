@@ -35,7 +35,7 @@ function Work({
   removeJobHighlight
 }: Props) {
   return (
-    <Section heading="Your Previous Employment">
+    <Section heading="Your Employment History">
       <LabeledInput
         name="headings.work"
         label="Section Heading"
