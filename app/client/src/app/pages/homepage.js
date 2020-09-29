@@ -175,7 +175,7 @@ class Homepage extends React.Component {
                 value={selectedStream}
                 onChange={this.handleStreamChange}
               // autoFocus
-              />
+                            />
               <br></br>
               <Typography variant="h6">
                 Experience
