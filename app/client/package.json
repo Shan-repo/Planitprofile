@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "The client side source ",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config webpack.dev.config.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js --progress --profile --colors",
+    "start": "NODE_ENV=development webpack-dev-server --hot --config webpack.dev.config.js",
+    "build": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --profile --colors",
     "clean": "rimraf dist",
     "lint": "blyss | snazzy",
     "fix": "blyss --fix",
