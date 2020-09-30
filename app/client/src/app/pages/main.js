@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import Homepage from '../pages/homepage';
 import Resume from '../pages/resume';
 import Contact from '../pages/contact';
@@ -10,7 +10,7 @@ import Loadable from 'react-loadable'
 import { ScrollToTop, Loader } from '../../common/components'
 import { Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList } from 'react-mdl';
 import { Link } from 'react-router-dom'
-import { useHistory } from "react-router";
+import { hashHistory } from "react-router";
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import { resumes } from '.';
@@ -35,27 +35,16 @@ const LoadableResumes = Loadable({
   loading: Loader
 })
 
-export const Main = () => {
-  const history = useHistory();
-  const getResume = () => history.push('/');
+export const Main = (props) => {
+  //const history = useHistory();
+  const getResume = () => props.history.push('/');
 
 
   return (
     <div className="demo-big-content">
       <Layout >
         <Header className="header-color" title="Planit Profiles" scroll onClick={getResume}>
-          {/* <Navigation>
-            <Link to="/resume">Resume</Link>
-            </Navigation> */}
         </Header>
-        {/* <Drawer title="Planit Profiles">
-            <Navigation>
-            <Link to="/resume">Resume</Link>
-            </Navigation>
-            <Navigation >
-            <Link to="/resourceUtilization">ResourceUtilization</Link>
-            </Navigation>
-        </Drawer> */}
         <Content>
           <Switch>
             <Route exact path="/" component={Homepage} />
@@ -87,10 +76,12 @@ export const Main = () => {
 }
 
 export const PublicLayout = (props) => {
-
+  const getResume = () => props.history.push('/');
   return (
     <div className="demo-big-content">
       <Layout >
+      {/* <Link to="/">Homepage</Link> */}
+
         <Content>
           <Switch>
             {/* <Route path="/home" component={LoadableHome} /> */}
@@ -107,8 +98,8 @@ export const PublicLayout = (props) => {
 }
 
 export const HomeLayout = (props) => {
-  const history = useHistory();
-  const getResume = () => history.push('/');
+  
+  const getResume = () => props.history.push('/');
   return (
     <div className="demo-big-content">
     <Layout >
@@ -125,26 +116,15 @@ export const HomeLayout = (props) => {
 }
 
 export const ResumeLayout = (props) => {
-  const history = useHistory();
-  const getResume = () => history.push('/');
-
+  //const history = useHistory();
+  const getResume = () => props.history.push('/');
 
   return (
     <div className="demo-big-content">
       <Layout >
         <Header className="header-color" title="Planit Profiles" scroll onClick={getResume}>
-          {/* <Navigation>
-            <Link to="/resume">Resume</Link>
-            </Navigation> */}
         </Header>
-        {/* <Drawer title="Planit Profiles">
-            <Navigation>
-            <Link to="/resume">Resume</Link>
-            </Navigation>
-            <Navigation >
-            <Link to="/resourceUtilization">ResourceUtilization</Link>
-            </Navigation>
-        </Drawer> */}
+ 
         <Content>
           <Switch>
             <Route path="/resume" component={LoadableResume} />            
@@ -169,26 +149,13 @@ export const ResumeLayout = (props) => {
 
 
 export const ResumesLayout = (props) => {
-  const history = useHistory();
-  const getResume = () => history.push('/');
-
-
+  //const history = useHistory();
+  const getResume = () => props.history.push('/');
   return (
     <div className="demo-big-content">
       <Layout >
         <Header className="header-color" title="Planit Profiles" scroll onClick={getResume}>
-          {/* <Navigation>
-            <Link to="/resume">Resume</Link>
-            </Navigation> */}
         </Header>
-        {/* <Drawer title="Planit Profiles">
-            <Navigation>
-            <Link to="/resume">Resume</Link>
-            </Navigation>
-            <Navigation >
-            <Link to="/resourceUtilization">ResourceUtilization</Link>
-            </Navigation>
-        </Drawer> */}
         <Content>
           <Switch>
             <Route exact path='/resumes/:resource'  component={resumes} />            
@@ -211,6 +178,7 @@ export const ResumesLayout = (props) => {
   );
 }
 
-export default { Main, PublicLayout, ResumeLayout, ResumesLayout };
+export default withRouter(Main, PublicLayout, ResumeLayout, ResumesLayout);
+// export default { Main, PublicLayout, ResumeLayout, ResumesLayout };
 
 

@@ -30,16 +30,15 @@ type Props = {
   big?: boolean
 }
 
-function Logo({ big }: Props) {
+
+
+function HomeLink() {
   return (
-   
-    <Text big={big}>
-    Create New Resume
-    </Text>
-   
-  )
+    <div style={{ float: 'left' }}>
+<Link to="/">Homepage</Link>
+    </div>
+    
+  );
 }
 
-
-
-export default (Logo)
+export default (HomeLink)

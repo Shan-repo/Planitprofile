@@ -10,6 +10,7 @@ import RoundButton from './RoundButton'
 import ScrollToTop from './ScrollToTop'
 import Loader, { Bars } from './Loader'
 import Logo from './Logo'
+import Homelink from './HomeLink'
 
 export {
   Button,
@@ -20,5 +21,6 @@ export {
   ScrollToTop,
   Loader,
   Logo,
-  Bars
+  Bars,
+  Homelink
 }

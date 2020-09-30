@@ -79,16 +79,16 @@ function generateResume(resumeData: FormValuesWithSectionOrder): AsyncAction {
       const profileData = JSON.stringify(resumeData)
 
       
-      const fs = require('fs');
+      // const fs = require('fs');
       
-      fs.writeFileSync("test.json", profileData, function(err) {
-          if (err) {
-              console.log(err);
-          }
-          else{
-            console.log("success");
-          }
-      });
+      // fs.writeFileSync("test.json", profileData, function(err) {
+      //     if (err) {
+      //         console.log(err);
+      //     }
+      //     else{
+      //       console.log("success");
+      //     }
+      // });
       // var blob = new Blob([profileData], { type: "application/json" });
       // var saveAs = window.saveAs;
       // saveAs(blob, "../../../../Profiles/my_outfile.json");

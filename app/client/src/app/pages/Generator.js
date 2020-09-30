@@ -7,7 +7,7 @@ import Loadable from 'react-loadable'
 import styled from 'styled-components'
 import Form from '../../features/form/components'
 import { SideNav, Progress } from '../../features/progress/components'
-import { Logo, Loader } from '../../common/components'
+import { Logo, Loader, Homelink } from '../../common/components'
 import { colors, sizes } from '../../common/theme'
 import type { Location } from 'react-router-dom'
 
@@ -38,12 +38,24 @@ const Header = styled.header`
   z-index: 1;
   width: 100vw;
   height: ${sizes.header};
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  background: ${colors.background};
+  border-bottom: 1px solid ${colors.borders};
+`
+
+const HeaderContent = styled.header`
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: ${sizes.header};
   display: flex;
   justify-content: center;
   align-items: center;
   background: ${colors.background};
   border-bottom: 1px solid ${colors.borders};
-`
+  `
 
 const Footer = styled.footer`
   width: 100%;
@@ -71,7 +83,10 @@ function Generator({ location }: Props) {
   return (
     <Layout>
       <Header>
+        <Homelink />
+        <div style={{display: 'flex', justifyContent: 'center'}}>
         <Logo />
+        </div>
       </Header>
       <SideNav />
       <Content>

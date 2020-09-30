@@ -224,7 +224,7 @@ class Homepage extends React.Component {
                   
                   this.getResume(selectedExperience,selectedStream,selectedResource)}}
               >
-                Get Resumess
+                Get Resumes
             </Button>
 
               <Button

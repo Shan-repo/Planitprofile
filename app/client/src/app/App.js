@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, useHistory } from 'react-router-dom'
 import Loadable from 'react-loadable'
 import { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
@@ -98,14 +98,14 @@ function App() {
         <Route path="/generator" component={LoadableGenerator} />
         <Route path="/about" component={LoadableAbout} />
         <Route path="*" component={LoadableError404} /> */}
-        <Route path='/generator' component={PublicLayout} />
-        <Route path='/home' component={HomeLayout} />
-        <Route path='/resume' component={ResumeLayout} />
-        <Route exact path='/resumes/:resource' component={ResumesLayout} />
-        <Route path="/contact" component={LoadableContact} />
+        <Route path='/generator' component={PublicLayout} history={useHistory}/>
+        <Route path='/home' component={HomeLayout} history={useHistory}/>
+        <Route path='/resume' component={ResumeLayout} history={useHistory} />
+        <Route exact path='/resumes/:resource' component={ResumesLayout} history={useHistory}/>
+        <Route path="/contact" component={LoadableContact}history={useHistory}/>
         <Route path='/WebSite' component={() => { window.location.replace('https://www.planittesting.com/au/privacy'); return null; }} />
         <Route path='/terms' component={() => { window.location.replace('https://www.planittesting.com/au/terms-conditions'); return null; }} />
-        <Route exact path='/' component={Main} />
+        <Route exact path='/' component={Main} history={useHistory} />
       </Switch>
     </ScrollToTop>
   )
