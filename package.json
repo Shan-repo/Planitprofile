@@ -2,7 +2,7 @@
   "name": "PlanitProfilePortal",
   "version": "0.1.0",
   "scripts": {
-    "build": "npm run build:client && npm run build:server && npm run start:client & npm run start:server",
+    "build": "npm run build:client && npm run build:server && npm run start:client && npm run start:server",
     "start": "npm run start:client & npm run start:server",
     "lint": "npm run lint:client && npm run lint:server",
     "fix": "npm run fix:client && npm run fix:server",
