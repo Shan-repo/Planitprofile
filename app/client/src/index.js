@@ -10,7 +10,7 @@ import App from './app/App'
 import store from './app/store'
 
 render(
-  <Router>
+  <Router >
     <Provider store={store}>
       <App />
     </Provider>

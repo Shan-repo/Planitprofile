@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom'
 import { useHistory } from "react-router";
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
+import { resumes } from '.';
 
 const LoadableGenerator = Loadable({
   loader: () => import('./Generator'),
@@ -26,6 +27,11 @@ const LoadableHome = Loadable({
 
 const LoadableResume = Loadable({
   loader: () => import('./resume'),
+  loading: Loader
+})
+
+const LoadableResumes = Loadable({
+  loader: () => import('./resumes'),
   loading: Loader
 })
 
@@ -162,6 +168,49 @@ export const ResumeLayout = (props) => {
 }
 
 
-export default { Main, PublicLayout, ResumeLayout };
+export const ResumesLayout = (props) => {
+  const history = useHistory();
+  const getResume = () => history.push('/');
+
+
+  return (
+    <div className="demo-big-content">
+      <Layout >
+        <Header className="header-color" title="Planit Profiles" scroll onClick={getResume}>
+          {/* <Navigation>
+            <Link to="/resume">Resume</Link>
+            </Navigation> */}
+        </Header>
+        {/* <Drawer title="Planit Profiles">
+            <Navigation>
+            <Link to="/resume">Resume</Link>
+            </Navigation>
+            <Navigation >
+            <Link to="/resourceUtilization">ResourceUtilization</Link>
+            </Navigation>
+        </Drawer> */}
+        <Content>
+          <Switch>
+            <Route exact path='/resumes/:resource'  component={resumes} />            
+          </Switch>
+
+        </Content>
+        <Footer size="mini">
+          <div style={{ float: 'left' }}><img src="https://cdn.planittesting.com/planit/media/siteimages/components/planit-logo-140.png" width="50" alt="logo" /></div>
+          <FooterSection type="right">
+            <FooterLinkList>
+              <Link to="/contact">Contact</Link>
+              <a target="_blank" href="/terms">Terms & Conditions</a>
+              <a target="_blank" href="/WebSite">Privacy</a>
+            </FooterLinkList>
+          </FooterSection>
+        </Footer>
+      </Layout>
+    </div>
+
+  );
+}
+
+export default { Main, PublicLayout, ResumeLayout, ResumesLayout };
 
 

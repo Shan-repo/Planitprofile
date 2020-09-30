@@ -130,6 +130,7 @@ class Preview extends Component<Props, State> {
     const { currPage } = this.state
 
     return (
+
       <Wrapper hideOnMobile={hideOnMobile}>
         <Toolbar
           resumeURL={resumeURL || BlankPDF}
@@ -144,7 +145,8 @@ class Preview extends Component<Props, State> {
         />
         <LoadingBar status={status} />
         <Document
-          file={resumeURL || BlankPDF}
+  
+          file={jsonURL}
           onLoadSuccess={this.setPageCount}
           loading={<Loader />}
         >

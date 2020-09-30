@@ -13,7 +13,7 @@ import NexaBold from './assets/nexa-bold.otf'
 import NexaLight from './assets/nexa-light.otf'
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
-import { Main, PublicLayout, HomeLayout, ResumeLayout } from './pages/main';
+import { Main, PublicLayout, HomeLayout, ResumeLayout, ResumesLayout } from './pages/main';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
@@ -101,6 +101,7 @@ function App() {
         <Route path='/generator' component={PublicLayout} />
         <Route path='/home' component={HomeLayout} />
         <Route path='/resume' component={ResumeLayout} />
+        <Route exact path='/resumes/:resource' component={ResumesLayout} />
         <Route path="/contact" component={LoadableContact} />
         <Route path='/WebSite' component={() => { window.location.replace('https://www.planittesting.com/au/privacy'); return null; }} />
         <Route path='/terms' component={() => { window.location.replace('https://www.planittesting.com/au/terms-conditions'); return null; }} />
