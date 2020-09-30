@@ -1,6 +1,7 @@
 {
   "name": "PlanitProfilePortal",
   "version": "0.1.0",
+  "hompage":"https://shan-repo.github.io/Planitprofile/",
   "scripts": {
     "build": "npm run build:client && npm run build:server && npm run start:client && npm run start:server",
     "start": "npm run start:client & npm run start:server",
@@ -22,7 +23,9 @@
     "lint:server": "cd app/server && npm run lint",
     "test:server": "cd app/server && npm test",
     "contributors": "all-contributors",
-    "postinstall": "opencollective postinstall"
+    "postinstall": "opencollective postinstall",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "license": "MIT",
   "devDependencies": {
