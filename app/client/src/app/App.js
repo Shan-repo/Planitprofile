@@ -102,7 +102,7 @@ function App() {
         <Route path='/home' component={HomeLayout} history={useHistory}/>
         <Route path='/resume' component={ResumeLayout} history={useHistory} />
         <Route exact path='/resumes/:resource' component={ResumesLayout} history={useHistory}/>
-        <Route path="/contact" component={LoadableContact}history={useHistory}/>
+        <Route path="/contact" component={Main}history={useHistory}/>
         <Route path='/WebSite' component={() => { window.location.replace('https://www.planittesting.com/au/privacy'); return null; }} />
         <Route path='/terms' component={() => { window.location.replace('https://www.planittesting.com/au/terms-conditions'); return null; }} />
         <Route exact path='/' component={Main} history={useHistory} />
