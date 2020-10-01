@@ -58,6 +58,31 @@ const useStyles = theme => ({
   },
 });
 
+const ctx = require.context('../../../../Profiles', true)
+const files = ctx.keys().map(ctx)   
+
+function createSelectItems() {
+const ctx = require.context('../../../../Profiles', true)
+const files = ctx.keys()    
+let fileitems = [] ;
+let items = [] ;
+let filteredvalues,data = [] ;
+{
+  ctx.keys().map((item, i) => (
+    fileitems.push(item)
+  ))
+}   
+var PATTERN = '.json',
+filtered = fileitems.filter(function (str) { return str.indexOf(PATTERN) === -1; });
+filteredvalues = filtered.map(s => s.substr(2));
+
+for(var i=0; i<filteredvalues.length; i++)  {
+  data.push({label: filteredvalues[i], value: filteredvalues[i]});
+}
+
+  return data;
+} 
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -122,11 +147,12 @@ class Homepage extends React.Component {
   //   //   search: string ? `?${string}` : ''
   //   // })
   // };
-
+ 
 
   getResume = (p1,p2,p3) => {
     // if(history) history.push('/resume');
     const { history } = this.props;
+
     this.props.history.push({
       pathname: '/resume',
       state: {
@@ -206,7 +232,7 @@ class Homepage extends React.Component {
                 id="Resources"
                 label="Testing Resources"
                 name="Resources"
-                options={Resources}
+                options={createSelectItems()}
                 value={selectedResource}
                 onChange={this.handleResourceChange}
                 //onChange={handleChange}
