@@ -48,10 +48,14 @@ function uploadJSON(file: File): AsyncAction {
         dispatch(uploadJSONSuccess(json))
       } else {
         const errMessage = await response.text()
+        console.log(errMessage)
         dispatch(uploadJSONFailure(errMessage))
+      
       }
     } catch (err) {
+      console.log(err.message)
       dispatch(uploadJSONFailure(err.message))
+      
     }
   }
 }

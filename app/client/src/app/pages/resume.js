@@ -15,7 +15,7 @@ import { useLocation } from "react-router";
 export default class Resume extends Component {
 
 	
-	  printDocument() {
+	  printDocument(resource) {
 		// const input = document.getElementById('divToPrint');
 		// html2canvas(input)
 		//   .then((canvas) => {
@@ -31,9 +31,34 @@ export default class Resume extends Component {
 		html2canvas(document.querySelector(("#divToPrint")), 
 								{scale: 2}
 						 ).then(canvas => {
-			let pdf = new jsPDF('p', 'mm', 'a4');
-			pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, 211, 298);
-			pdf.save(filename);
+			// let pdf = new jsPDF('p', 'mm', 'a4');
+			// pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, 211, 298);
+			// pdf.save(filename);
+			var imgData = canvas.toDataURL('image/png');
+
+			/*
+			Here are the numbers (paper width and height) that I found to work. 
+			It still creates a little overlap part between the pages, but good enough for me.
+			if you can find an official number from jsPDF, use them.
+			*/
+			var imgWidth = 210; 
+			var pageHeight = 295;  
+			var imgHeight = canvas.height * imgWidth / canvas.width;
+			var heightLeft = imgHeight;
+	  
+			var doc = new jsPDF('p', 'mm','a4', true);
+			var position = 0;
+	  
+			doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+			heightLeft -= pageHeight;
+	  
+			while (heightLeft >= 0) {
+			  position = heightLeft - imgHeight;
+			  doc.addPage();
+			  doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+			  heightLeft -= pageHeight;
+			}
+			doc.save( resource+'.pdf');
 		});
 	  }
 	  
@@ -62,7 +87,7 @@ export default class Resume extends Component {
 							{/* <Profile /> */}
 							{/* <Skills /> */}
 						
-							<FABButton colored style={{  position: 'fixed', bottom: '1rem',right: '2rem'}} onClick={this.printDocument}>
+							<FABButton colored style={{  position: 'fixed', bottom: '1rem',right: '2rem'}} onClick={this.printDocument(resource)}>
 								<AiOutlineDownload/>
 							</FABButton>
 						</div>
