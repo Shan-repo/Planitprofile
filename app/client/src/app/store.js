@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'development') {
 
 const enhancer = composeWithDevTools(
   applyMiddleware(...middleware),
-  persistState(['form', 'progress'], { key: 'resumake1' })
+  persistState(['form', 'progress'], { key: 'PlanitProfile' })
 )
 
 const store = createStore(reducer, enhancer)

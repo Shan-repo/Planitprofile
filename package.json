@@ -36,7 +36,6 @@
     "opencollective": "^1.0.3"
   },
   "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/resumake"
+    "type": "opencollective"
   }
 }

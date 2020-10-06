@@ -4,10 +4,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/saadq/resumake"
+    "type": "git"
   },
-  "homepage": "https://github.com/saadq/resumake",
   "scripts": {
     "start": "nodemon index.js --exec babel-node",
     "build": "babel src -d lib --copy-files",

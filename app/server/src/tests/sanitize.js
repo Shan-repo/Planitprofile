@@ -123,8 +123,7 @@ describe('sanitizer', () => {
         {
           keywords: ['Node.js', 'Koa', 'React', 'Redux'],
           name: null,
-          description: '',
-          url: 'resumake.io'
+          description: ''
         },
         {
           keywords: ['Node.js', 'Koa', 'React', 'Redux'],
@@ -200,8 +199,7 @@ describe('sanitizer', () => {
       ],
       projects: [
         {
-          keywords: ['Node.js', 'Koa', 'React', 'Redux'],
-          url: 'resumake.io'
+          keywords: ['Node.js', 'Koa', 'React', 'Redux']
         },
         {
           keywords: ['Node.js', 'Koa', 'React', 'Redux'],

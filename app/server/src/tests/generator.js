@@ -20,8 +20,8 @@ test('makeReadme should work for all templates', () => {
 
   templates.forEach(template => {
     const expected = stripIndent`
-      # Resumake Template ${template.id}
-      > LaTeX code generated at [resumake.io](https://resumake.io)
+      #  Template ${template.id}
+
 
       ## Usage
       To generate a PDF from this LaTeX code, navigate to this folder in a terminal and run:

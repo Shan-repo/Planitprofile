@@ -28,7 +28,7 @@ export default class Resume extends Component {
 		// ;
 		const filename  = 'ThisIsYourPDFFilename.pdf';
 		
-		html2canvas(document.querySelector(("#divToPrint")), 
+		html2canvas(document.getElementById(("#divToPrint")), 
 								{scale: 2}
 						 ).then(canvas => {
 			// let pdf = new jsPDF('p', 'mm', 'a4');

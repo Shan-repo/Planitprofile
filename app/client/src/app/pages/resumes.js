@@ -73,6 +73,13 @@ export default class Resumes extends Component {
 			<section className='contact' >
 				<div className='container' >
 					<div className='row' >
+						<div className='col s12 m9 mt4' id="divToPrint">
+							<About profiles={resource} />
+							<Experiences profiles={resource} />
+							<Skills profiles={resource} />
+							<Certification profiles={resource} />
+							<Education profiles={resource} />
+						</div>
 						<div >
 
 							{/* <Profile /> */}
@@ -82,14 +89,6 @@ export default class Resumes extends Component {
 								<AiOutlineDownload />
 							</FABButton>
 						</div>
-						<div className='col s12 m9 mt4' id="divToPrint">
-							<About profiles={resource} />
-							<Experiences profiles={resource} />
-							<Skills profiles={resource} />
-							<Certification profiles={resource} />
-							<Education profiles={resource} />
-						</div>
-
 
 
 					</div>

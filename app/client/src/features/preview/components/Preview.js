@@ -12,6 +12,9 @@ import { Loader } from '../../../common/components'
 import { sizes } from '../../../common/theme'
 import type { State as ReduxState } from '../../../app/types'
 import BlankPDF from '../assets/blank.pdf'
+import Section from '../../form/components/sections/Section'
+import ReactJson from 'react-json-view';
+
 
 const Wrapper = styled.div`
   width: 60%;
@@ -53,6 +56,7 @@ type State = {
   isPrinting: boolean
 }
 
+
 const initialScale = (document.body: any).clientWidth > 1440 ? 1.75 : 1
 
 class Preview extends Component<Props, State> {
@@ -71,6 +75,7 @@ class Preview extends Component<Props, State> {
     this.setState(prevState => ({
       currPage: Math.min(prevState.currPage + 1, this.state.numPages)
     }))
+  
   }
 
   prevPage = () => {
@@ -128,7 +133,8 @@ class Preview extends Component<Props, State> {
       hideOnMobile
     } = this.props
     const { currPage } = this.state
-
+    const dat = JSON.parse(localStorage.getItem('PlanitProfile'))
+    var widgets = localStorage.getItem('PlanitProfile');
     return (
 
       <Wrapper hideOnMobile={hideOnMobile}>
@@ -144,7 +150,11 @@ class Preview extends Component<Props, State> {
           zoomOut={this.zoomOut}
         />
         <LoadingBar status={status} />
-        <Document
+       
+        {/* <Section heading={JSON.stringify(localStorage.getItem('PlanitProfile'))} ></Section> */}
+        <ReactJson src={dat} theme="threezerotwofour" />
+       
+        {/* <Document
   
           file={jsonURL}
           onLoadSuccess={this.setPageCount}
@@ -156,7 +166,7 @@ class Preview extends Component<Props, State> {
             renderAnnotations={false}
             renderTextLayer={false}
           />
-        </Document>
+        </Document> */}
       </Wrapper>
     )
   }

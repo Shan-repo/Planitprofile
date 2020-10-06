@@ -359,7 +359,7 @@ describe('form reducer', () => {
         ...initialState.values,
         projects: [
           {
-            name: 'resumake',
+            name: 'planitprofile',
             description: 'Awesome resume generator',
             keywords: ['Node.js', 'Koa', 'React', 'Redux']
           }
@@ -375,7 +375,7 @@ describe('form reducer', () => {
         ...state.values,
         projects: [
           {
-            name: 'resumake',
+            name: 'planitprofile',
             description: 'Awesome resume generator',
             keywords: ['Node.js', 'Koa', 'React', 'Redux']
           },
@@ -397,7 +397,7 @@ describe('form reducer', () => {
         ...initialState.values,
         projects: [
           {
-            name: 'resumake',
+            name: 'planitprofile',
             description: 'Awesome resume generator',
             keywords: ['Node.js', 'Koa', 'React', 'Redux']
           },
@@ -418,7 +418,7 @@ describe('form reducer', () => {
         ...state.values,
         projects: [
           {
-            name: 'resumake',
+            name: 'planitprofile',
             description: 'Awesome resume generator',
             keywords: ['Node.js', 'Koa', 'React', 'Redux']
           }
@@ -437,7 +437,7 @@ describe('form reducer', () => {
         ...initialState.values,
         projects: [
           {
-            name: 'resumake',
+            name: 'planitprofile',
             description: 'Awesome resume generator',
             keywords: ['Node.js', 'Koa', 'React', 'Redux']
           },
@@ -458,7 +458,7 @@ describe('form reducer', () => {
         ...state.values,
         projects: [
           {
-            name: 'resumake',
+            name: 'planitprofile',
             description: 'Awesome resume generator',
             keywords: ['Node.js', 'Koa', 'React', 'Redux']
           },
@@ -482,7 +482,7 @@ describe('form reducer', () => {
         ...initialState.values,
         projects: [
           {
-            name: 'resumake',
+            name: 'planitprofile',
             description: 'Awesome resume generator',
             keywords: ['Node.js', 'Koa', 'React', 'Redux']
           },
@@ -503,7 +503,7 @@ describe('form reducer', () => {
         ...state.values,
         projects: [
           {
-            name: 'resumake',
+            name: 'planitprofile',
             description: 'Awesome resume generator',
             keywords: ['Node.js', 'Koa', 'React']
           },

@@ -78,27 +78,6 @@ function generateResume(resumeData: FormValuesWithSectionOrder): AsyncAction {
       console.log(JSON.stringify(resumeData))
       const profileData = JSON.stringify(resumeData)
 
-      
-      // const fs = require('fs');
-      
-      // fs.writeFileSync("test.json", profileData, function(err) {
-      //     if (err) {
-      //         console.log(err);
-      //     }
-      //     else{
-      //       console.log("success");
-      //     }
-      // });
-      // var blob = new Blob([profileData], { type: "application/json" });
-      // var saveAs = window.saveAs;
-      // saveAs(blob, "../../../../Profiles/my_outfile.json");
-      //   fs.writeFile('./newProfile.json', profileData, err => {
-      //     if (err) {
-      //         console.log('Error writing file', err)
-      //     } else {
-      //         console.log('Successfully wrote file')
-      //     }
-      // })
     } catch (err) {
       console.log(err);
       dispatch(generateResumeFailure())

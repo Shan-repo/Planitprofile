@@ -84,19 +84,6 @@ function Error404() {
   return (
     <Wrapper>
       <ErrorHeading>404</ErrorHeading>
-      <ErrorDescription>
-        We can’t seem to find this page. Please enjoy this comic before{' '}
-        <ErrorLink onClick={() => window.history.back()}>going back</ErrorLink>{' '}
-        or <ErrorLink href="https://resumake.io">going home</ErrorLink>.
-      </ErrorDescription>
-      <ComicContainer>
-        <ComicImage src={comic} alt="Resume Comic" />
-        <ComicCite>Credit: Bob Eckstein (bobeckstein.com)</ComicCite>
-      </ComicContainer>
-      <ButtonContainer>
-        <Button onClick={() => window.history.back()}>Go Back</Button>
-        <LinkButton href="https://resumake.io">Go Home</LinkButton>
-      </ButtonContainer>
     </Wrapper>
   )
 }

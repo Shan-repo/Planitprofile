@@ -1,4 +1,4 @@
-# Contributing to Resumake
+
 
 ## Code of Conduct
 Please note that this project is released with a [Contributor Code of Conduct](./code-of-conduct.md). By participating in this project you agree to abide by its terms.
@@ -74,7 +74,7 @@ npm run format # Uses prettier to format client and server code
 The client side is a React/Redux app with `styled-components` used for styling. It uses [`redux-form`](https://github.com/erikras/redux-form/) to manage form state, and [`react-pdf`](https://github.com/wojtekmaj/react-pdf) to display a PDF preview.
 
 ### Setup
-To begin working on the clientside app, navigate to `resumake/app/client` in your terminal. If you haven't followed the steps listed in the **Setting Up** section, you will need to run:
+To begin working on the clientside app, navigate to `app/client` in your terminal. If you haven't followed the steps listed in the **Setting Up** section, you will need to run:
 
 ```bash
 npm install
@@ -137,7 +137,7 @@ This feature manages both the progress bar at the bottom as well as the section 
 The server side uses Node.js with Koa as the web framework of choice.
 
 ### Setup
-To begin working on the serverside app, navigate to `resumake/app/server` in your terminal. If you haven't followed the steps listed in the **Setting Up** section, you will need to run:
+To begin working on the serverside app, navigate to `/app/server` in your terminal. If you haven't followed the steps listed in the **Setting Up** section, you will need to run:
 
 ```bash
 npm install
@@ -205,5 +205,3 @@ This file is used to generate a LaTeX document, as well as any additional option
 
 ---
 
-## Submitting Issues
-There is currently no issue format/template you need to follow, you can just raise your concern normally in the GitHub issues section.
