@@ -10,11 +10,6 @@ import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-
-//import { withRouter } from "react-router";
-
-
-
 import { connect } from 'react-redux'
 import { withRouter, type RouterHistory } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify'
@@ -335,38 +330,28 @@ class Homepage extends React.Component {
     );
   };
 
-  // onSubmit = () => {
-  //   console.log("Test")
-  //   console.log("TESSSSSSSS" + this.state.selectedStream)
-  //   const { history } = this.props;
-  //   const pathname = '/resume';
-  //   const { search } = this.getLocation()
-  //   const query = queryString.parse(search)
-  //   if (this.state.search) {
-  //     query.q = this.state.search
-  //   } else {
-  //     delete query.q
-  //   }
-  //   const string = queryString.stringify(query)
-  //   console.log(string)
-  //   debugger;
-  //   history.push({
-  //     pathname: '/resume',
-  //     search: string ? `?${string}` : ''
-  //   });
-  //   // router.push({
-  //   //   pathname,
-  //   //   search: string ? `?${string}` : ''
-  //   // })
-  // };
 
+  // getResume = (p1, p2, p3) => {
+  //   // if(history) history.push('/resume');
+  //   const { history } = this.props;
+
+  //   this.props.history.push({
+  //     pathname: '/resume',
+  //     state: {
+  //       exp: p1.value,
+  //       stream: p2.value,
+  //       resource: p3.value,
+  //     },
+  //   })
+
+  // }
 
   getResume = (p1, p2, p3) => {
     // if(history) history.push('/resume');
     const { history } = this.props;
 
     this.props.history.push({
-      pathname: '/resume',
+      pathname: '/resumes/'+ p3.value,
       state: {
         exp: p1.value,
         stream: p2.value,
